@@ -8,6 +8,7 @@ abstract class Shape {
     public abstract String toString();
     
     Shape(String color) {
+        System.out.println("Shape constructor called\n");
         this.color = color;
     }
     
@@ -22,6 +23,7 @@ class Circle extends Shape {
     
     Circle(String color, double radius) {
         super(color);
+        System.out.println("Circle constructor called\n");
         this.radius = radius;
     }
     
