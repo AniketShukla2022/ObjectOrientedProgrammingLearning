@@ -8,7 +8,7 @@ class Complex {
     }
     
     Complex(Complex c) {
-        System.out.println("copy constructor called");
+        System.out.println("copy constructor called\n");
         real = c.real;
         img = c.img;
     }
@@ -23,6 +23,6 @@ class Main {
     public static void main(String[] args) {
         Complex c1 = new Complex(10.3,5.7);
         Complex c2 = new Complex(c1);
-        c2.toString();
+        System.out.println(c2.toString());
     }
 }
